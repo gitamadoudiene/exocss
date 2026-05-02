@@ -1,0 +1,282 @@
+ /* ================================================
+       EXERCICE CSS — "Le Blog du Code"
+       Remplissez chaque section au fur et à mesure
+       ================================================ */
+
+    /* -----------------------------------------------
+       1. RESET & BASE
+       Objectifs : box-sizing, margin, padding, font
+    ----------------------------------------------- */
+
+    * {
+      /* Astuce : box-sizing: border-box évite les surprises de largeur */
+      box-sizing: border-box; 
+      margin: 0 ;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif ;
+      font-size: 16px ;
+      line-height: 1.6;
+      background-color: #f0f2f5; /* couleur de fond claire */ ;
+      color: #333333;
+    }
+
+
+    /* -----------------------------------------------
+       2. HEADER
+       Objectifs : background, color, text-align,
+                   padding
+    ----------------------------------------------- */
+
+    header {
+      background-color: #1a1a2e ;
+      color: #ffffff ;
+      text-align: center ;
+      padding: 40px 20px ;
+     
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-style: italic; ;
+      opacity: 0.8 ;
+    }
+
+
+    /* -----------------------------------------------
+       3. NAVIGATION
+       Objectifs : display inline, list-style,
+                   background, padding, color
+    ----------------------------------------------- */
+
+    nav {
+      background-color: #15203d /* couleur légèrement différente du header */ ;
+      padding: 12px 20px ;
+      text-align: center ;
+    }
+
+    nav ul {
+      list-style: none /* pour enlever les puces */ ;
+    }
+
+    nav ul li {
+      display: inline /* pour aligner les éléments sur une ligne */ ;
+      margin: 0 8px/* espace entre les liens */ ;
+    }
+
+    nav ul li a {
+      color: #ffffff ;
+      text-decoration: none ;
+      font-weight: 600 ;
+      padding: 6px 10px ;
+      /* petit padding autour du lien */
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      /* Style au survol */
+      background-color: #e94560;
+      color: #ffffff ;
+      
+    }
+
+
+    /* -----------------------------------------------
+       4. CONTENEUR PRINCIPAL
+       Objectifs : width, max-width, margin auto
+                   (centrage classique sans flexbox)
+    ----------------------------------------------- */
+
+    .conteneur {
+      width: /* en % pour être responsive */ ;
+      max-width: /* ? px — largeur maximale */ ;
+      margin: /* auto pour centrer, + espace vertical */ ;
+    }
+
+
+    /* -----------------------------------------------
+       5. DISPOSITION : ARTICLES + SIDEBAR
+       Objectifs : float, width, clear
+       (la technique classique avant flexbox/grid)
+    ----------------------------------------------- */
+
+    .articles {
+      float: /* ? */ ;
+      width: /* environ 65% */ ;
+    }
+
+    .sidebar {
+      float: /* ? */ ;
+      width: /* environ 30% */ ;
+    }
+
+    /* IMPORTANT : le footer doit "nettoyer" les floats */
+    footer {
+      clear: /* ? */ ;
+    }
+
+
+    /* -----------------------------------------------
+       6. CARTE ARTICLE
+       Objectifs : background, border, border-radius,
+                   padding, margin-bottom, box-shadow
+    ----------------------------------------------- */
+
+    .carte-article {
+      background-color: /* blanc ou couleur claire */ ;
+      border: /* épaisseur style couleur */ ;
+      border-radius: /* arrondi des coins */ ;
+      padding: /* espace intérieur */ ;
+      margin-bottom: /* espace entre les cartes */ ;
+      box-shadow: /* ombre portée */ ;
+    }
+
+    .carte-article h2 {
+      font-size: /* taille du titre d'article */ ;
+      color: /* couleur du titre */ ;
+      margin-bottom: /* ? */ ;
+    }
+
+    .carte-article .meta {
+      font-size: /* plus petit que le texte normal */ ;
+      color: /* gris ou couleur secondaire */ ;
+      margin-bottom: /* ? */ ;
+    }
+
+    .carte-article p {
+      margin-bottom: /* ? */ ;
+    }
+
+    /* Lien "Lire la suite" */
+    .carte-article a.lire-plus {
+      display: /* inline-block pour pouvoir mettre du padding */ ;
+      background-color: /* couleur principale */ ;
+      color: /* blanc */ ;
+      padding: /* ? */ ;
+      border-radius: /* ? */ ;
+      text-decoration: /* ? */ ;
+      font-size: /* ? */ ;
+    }
+
+    .carte-article a.lire-plus:hover {
+      background-color: /* couleur plus foncée */ ;
+      /* Bonus : transition */
+    }
+
+
+    /* -----------------------------------------------
+       7. IMAGE D'ARTICLE
+       Objectifs : width, height, object-fit, display
+    ----------------------------------------------- */
+
+    .carte-article img {
+      width: /* pleine largeur de la carte */ ;
+      height: /* hauteur fixe, ex: 180px */ ;
+      object-fit: /* pour ne pas déformer l'image */ ;
+      display: /* ? */ ;
+      border-radius: /* même arrondi que la carte */ ;
+      margin-bottom: /* ? */ ;
+    }
+
+
+    /* -----------------------------------------------
+       8. SIDEBAR — WIDGETS
+       Objectifs : background, padding, border-left,
+                   margin-bottom
+    ----------------------------------------------- */
+
+    .widget {
+      background-color: /* ? */ ;
+      border-left: /* bordure colorée à gauche */ ;
+      padding: /* ? */ ;
+      margin-bottom: /* espace entre widgets */ ;
+    }
+
+    .widget h3 {
+      font-size: /* ? */ ;
+      margin-bottom: /* ? */ ;
+      text-transform: /* majuscules */ ;
+      letter-spacing: /* ? */ ;
+    }
+
+    .widget ul {
+      list-style: /* ? */ ;
+      padding-left: /* ? */ ;
+    }
+
+    .widget ul li {
+      padding: /* ? */ ;
+      border-bottom: /* ligne de séparation discrète */ ;
+    }
+
+    .widget ul li:last-child {
+      border-bottom: /* enlever la bordure du dernier */ ;
+    }
+
+
+    /* -----------------------------------------------
+       9. ÉTIQUETTE / TAG
+       Objectifs : display inline-block, padding,
+                   border-radius, font-size
+    ----------------------------------------------- */
+
+    .tag {
+      display: /* ? */ ;
+      background-color: /* couleur douce */ ;
+      color: /* ? */ ;
+      padding: /* petit padding */ ;
+      border-radius: /* arrondi */ ;
+      font-size: /* petit texte */ ;
+      margin-right: /* ? */ ;
+      margin-bottom: /* ? */ ;
+    }
+
+
+    /* -----------------------------------------------
+       10. FOOTER
+       Objectifs : background, color, text-align,
+                   padding, border-top
+    ----------------------------------------------- */
+
+    footer {
+      background-color: /* ? */ ;
+      color: /* ? */ ;
+      text-align: /* ? */ ;
+      padding: /* ? */ ;
+      border-top: /* ligne de séparation en haut */ ;
+      font-size: /* ? */ ;
+    }
+
+    footer a {
+      color: /* ? */ ;
+      text-decoration: /* ? */ ;
+    }
+
+    footer a:hover {
+      text-decoration: /* ? */ ;
+    }
+
+
+    /* -----------------------------------------------
+       BONUS — SÉLECTEURS AVANCÉS
+       (si vous avez terminé avant la fin du cours)
+    ----------------------------------------------- */
+
+    /* Changer le style du 1er article uniquement */
+    .carte-article:first-child {
+      border-left: /* bordure spéciale */ ;
+    }
+
+    /* Mettre en évidence les titres contenant un mot-clé */
+    /* (utilisé avec la classe .important) */
+    .important {
+      background-color: /* couleur d'alerte légère */ ;
+      font-weight: /* ? */ ;
+    }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Blog du Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+  ============================================ -->
+  <header>
+    <h1 > Le Blog du Code</h1>
+    <p>Apprendre le développement web, une ligne à la fois.</p>
+  </header>
+
+  <!-- ============================================
+       NAVIGATION
+  ============================================ -->
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">À propos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================
+       CONTENEUR PRINCIPAL
+  ============================================ -->
+  <div class="conteneur">
+
+    <!-- ARTICLES (colonne principale) -->
+    <main class="articles">
+
+      <!-- Article 1 -->
+      <article class="carte-article">
+        <img
+          src="https://picsum.photos/seed/css1/800/400"
+          alt="Illustration article 1"
+        />
+        <h2>Les sélecteurs CSS : le guide complet</h2>
+        <div class="meta">
+          Par <strong>Aminata Diallo</strong> &bull; 12 avril 2025 &bull;
+          <span class="tag">CSS</span>
+          <span class="tag">Débutant</span>
+        </div>
+        <p id="paragraphe">
+          Les sélecteurs CSS permettent de cibler précisément les éléments
+          HTML que vous souhaitez styliser. On distingue les sélecteurs
+          d'élément, de classe, d'identifiant, et les combinateurs.
+        </p>
+        <a href="#" class="lire-plus">Lire la suite →</a>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="carte-article">
+        <img
+          src="https://picsum.photos/seed/css2/800/400"
+          alt="Illustration article 2"
+        />
+        <h2 class="important">Le modèle de boîte (Box Model) expliqué</h2>
+        <div class="meta">
+          Par <strong>Moussa Ndiaye</strong> &bull; 5 avril 2025 &bull;
+          <span class="tag">CSS</span>
+          <span class="tag">Intermédiaire</span>
+        </div>
+        <p>
+          Comprendre le box model est essentiel : chaque élément HTML est
+          une boîte rectangulaire composée du contenu, du padding,
+          de la bordure (border) et de la marge (margin).
+        </p>
+        <a href="#" class="lire-plus">Lire la suite →</a>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="carte-article">
+        <img
+          src="https://picsum.photos/seed/css3/800/400"
+          alt="Illustration article 3"
+        />
+        <h2>Positionnement CSS : static, relative, absolute, fixed</h2>
+        <div class="meta">
+          Par <strong>Fatou Seck</strong> &bull; 28 mars 2025 &bull;
+          <span class="tag">CSS</span>
+          <span class="tag">Avancé</span>
+        </div>
+        <p>
+          La propriété <code>position</code> contrôle comment un élément
+          est placé dans le document. Chaque valeur a un comportement
+          différent selon le flux normal de la page.
+        </p>
+        <a href="#" class="lire-plus">Lire la suite →</a>
+      </article>
+
+    </main>
+
+    <!-- SIDEBAR (colonne latérale) -->
+    <aside class="sidebar">
+
+      <!-- Widget 1 : À propos -->
+      <div class="widget">
+        <h3>À propos</h3>
+        <p>
+          Ce blog est dédié aux étudiant(e)s qui apprennent le
+          développement web. Chaque article est écrit avec clarté
+          et pédagogie.
+        </p>
+      </div>
+
+      <!-- Widget 2 : Catégories -->
+      <div class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="#">HTML (8)</a></li>
+          <li><a href="#">CSS (12)</a></li>
+          <li><a href="#">JavaScript (5)</a></li>
+          <li><a href="#">Projets (3)</a></li>
+        </ul>
+      </div>
+
+      <!-- Widget 3 : Articles populaires -->
+      <div class="widget">
+        <h3>Articles populaires</h3>
+        <ul>
+          <li><a href="#">Les sélecteurs CSS</a></li>
+          <li><a href="#">Introduction à HTML5</a></li>
+          <li><a href="#">Créer un formulaire</a></li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- fin .conteneur -->
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer>
+    <p>
+      &copy; 2025 Le Blog du Code &mdash;
+      <a href="#">Mentions légales</a> &bull;
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
